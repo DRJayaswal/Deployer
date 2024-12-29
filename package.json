@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "redis": "^4.7.0"
   }
 }
