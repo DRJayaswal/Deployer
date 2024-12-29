@@ -26,9 +26,13 @@ async function main() {
         const id = response.element;
         const sourcePath = fileURLToPath(import.meta.url);
         const destination = path.dirname(sourcePath).replace("/src", "/dist") + `/projects/${id}`;
+
         // Commented this out till i have an aws account
         // await downloadS3Project(destination);
+        
         await buildProject(id);
+
+        // Commented this out till i have an aws account
         // copyFinalDist(id);
         publisher.hSet("status", id, "deployed")
     }
