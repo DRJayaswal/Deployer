@@ -1,9 +1,17 @@
 {
-  "devDependencies": {
-    "typescript": "^5.7.2"
+  "name": "deployer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc"
   },
   "dependencies": {
-    "aws-sdk": "^2.1692.0",
-    "redis": "^4.7.0"
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
   }
 }
