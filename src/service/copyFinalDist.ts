@@ -1,6 +1,6 @@
 import path from 'path';
-import getAllFiles from './getAllFiles';
-import uploadFile from './uploadFiles';
+import getAllFiles from './getAllFiles.js';
+import uploadFile from './uploadFile.js';
 
 export function copyFinalDist(id: string) {
     const folderPath = path.join(__dirname, `output/${id}/dist`);
